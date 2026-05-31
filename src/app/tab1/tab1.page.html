@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Totem de Senhas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card mode="ios" style="margin-top: 20px;">
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Toque para retirar sua senha</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" size="large" color="danger" (click)="gerarSenha('SP')" style="margin-bottom: 15px;">
+        <ion-icon name="star" slot="start"></ion-icon>
+        ATENDIMENTO PRIORITÁRIO
+      </ion-button>
+      <ion-button expand="block" size="large" color="primary" (click)="gerarSenha('SG')" style="margin-bottom: 15px;">
+        <ion-icon name="people" slot="start"></ion-icon>
+        ATENDIMENTO GERAL
+      </ion-button>
+      <ion-button expand="block" size="large" color="success" (click)="gerarSenha('SE')">
+        <ion-icon name="medkit" slot="start"></ion-icon>
+        EXAMES / LABORATÓRIO
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

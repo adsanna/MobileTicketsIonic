@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Painel do Atendente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Próxima Senha</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <h1 style="font-size: 3rem; font-weight: bold; color: var(--ion-color-primary)">
+        {{ senha || '---' }}
+      </h1>
+      <p>{{ tipo || 'Nenhuma senha chamada ainda' }}</p>
+      <ion-button expand="block" color="warning" (click)="chamarProxima()">
+        <ion-icon name="megaphone-outline" slot="start"></ion-icon>
+        CHAMAR PRÓXIMA
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
